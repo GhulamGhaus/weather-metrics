@@ -1,0 +1,14 @@
+#  official OpenJDK 17 runtime as the base image
+FROM eclipse-temurin:17-jdk-alpine
+  
+  # Create working directory inside the container
+WORKDIR /app
+  
+  # Copy the application jar file into the container
+COPY /weather-metric/target/weather-metrics-0.0.1-SNAPSHOT.jar /app/weather-metrics-0.0.1-SNAPSHOT.jar
+  
+  # Expose the port 8080 to number runs on (default is 8080)
+EXPOSE 8080
+  
+  # Define the entry point for the container to run the application
+ENTRYPOINT ["java", "-jar", "/app/weather-metrics-0.0.1-SNAPSHOT.jar"]

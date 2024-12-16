@@ -1,0 +1,160 @@
+openapi: 3.0.3
+info:
+  title: Weather Metrics API
+  description: API for managing and querying weather metrics.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Local Development Server
+
+paths:
+  /api/v1/weather/metric:
+    post:
+      summary: Create a new weather metric
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WeatherMetric'
+      responses:
+        '200':
+          description: Weather metric created successfully
+        '400':
+          description: Invalid input
+    get:
+      summary: Retrieve all weather metrics or filter by sensor IDs
+      parameters:
+        - name: sensorId
+          in: query
+          description: Filter by sensor IDs (multiple values allowed)
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: List of weather metrics
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherMetric'
+        '400':
+          description: Invalid query parameter
+
+  /api/v1/weather/metric/statistic:
+    get:
+      summary: Retrieve weather metric statistics
+      parameters:
+        - name: sensorId
+          in: query
+          description: Filter by sensor IDs (multiple values allowed)
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: statistic
+          in: query
+          description: Statistic type (e.g., min, max, avg)
+          required: false
+          schema:
+            type: string
+            enum: [min, max, avg]
+        - name: metricName
+          in: query
+          description: Filter by metric names (e.g., temp, humidity)
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: startDate
+          in: query
+          description: Filter metrics after a specific date
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: endDate
+          in: query
+          description: Filter metrics till a specific date
+          required: false
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: List of weather metric statistics
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherMetricStatistics'
+        '400':
+          description: Invalid query parameter
+
+components:
+  schemas:
+    WeatherMetric:
+      type: object
+      properties:
+        sensorId:
+          type: string
+          description: The unique identifier for the sensor
+        timestamp:
+          type: string
+          format: date-time
+          description: The timestamp of the metric
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/Metric'
+    Metric:
+      type: object
+      properties:
+        metricName:
+          type: string
+          description: The name of the metric (e.g., temp, humidity)
+        metricValue:
+          type: number
+          description: The value of the metric
+        unit:
+          type: string
+          description: The statistic type (e.g., Celcius, g/kg, km/h)
+    WeatherMetricStatistics:
+      type: object
+      properties:
+        sensorId:
+          type: string
+          description: The unique identifier for the sensor
+        timestamp:
+          type: string
+          format: date-time
+          description: The timestamp from statistics calculated
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/MetricStatistic'
+    MetricStatistic:
+      type: object
+      properties:
+        metricName:
+          type: string
+          description: The name of the metric (e.g., temp, humidity)
+        metricValue:
+          type: number
+          description: The value of the metric
+        statistic:
+          type: string
+          description: The statistic type (e.g., avg, min, max)

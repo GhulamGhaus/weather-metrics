@@ -1,0 +1,583 @@
+{
+	"info": {
+		"_postman_id": "e16a5d25-c502-4040-a4d9-eaab48fe7ac2",
+		"name": "weather-metric-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40446150"
+	},
+	"item": [
+		{
+			"name": "Add Weather Matric - Sensor-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Weather Matric - Sensor-1 _2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Weather Matric - Sensor-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Weather Matric - Sensor-2_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Weather Matric - Sensor-2_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather Matric",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather Matric query by sensor-1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric?sensorId=sensor-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					],
+					"query": [
+						{
+							"key": "sensorId",
+							"value": "sensor-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather Matric query by multiple sensors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric?sensorId=sensor-1&sensorId=sensor-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric"
+					],
+					"query": [
+						{
+							"key": "sensorId",
+							"value": "sensor-1"
+						},
+						{
+							"key": "sensorId",
+							"value": "sensor-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic query by sensor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic?statistic=avg&startDate=2024-12-12T20:55:16.042614",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "statistic",
+							"value": "avg"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-12-12T20:55:16.042614"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic query by metric",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic?statistic=max&startDate=2024-12-12T20:55:16.042614&metricName=Temp&metricName=Humidity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "statistic",
+							"value": "max"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-12-12T20:55:16.042614"
+						},
+						{
+							"key": "metricName",
+							"value": "Temp"
+						},
+						{
+							"key": "metricName",
+							"value": "Humidity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic query by metric and sensor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic?statistic=min&startDate=2024-12-12T20:55:16.042614&metricName=Temp&metricName=Humidity&sensorId=sensor-1&sensorId=sensor-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "statistic",
+							"value": "min"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-12-12T20:55:16.042614"
+						},
+						{
+							"key": "metricName",
+							"value": "Temp"
+						},
+						{
+							"key": "metricName",
+							"value": "Humidity"
+						},
+						{
+							"key": "sensorId",
+							"value": "sensor-1"
+						},
+						{
+							"key": "sensorId",
+							"value": "sensor-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic query by date range",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic?statistic=min&sensorId=sensor-1&startDate=2024-12-13T20:55:16.042614&endDate=2024-12-14T20:55:16.042614",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "statistic",
+							"value": "min"
+						},
+						{
+							"key": "sensorId",
+							"value": "sensor-1"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-12-13T20:55:16.042614"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-12-14T20:55:16.042614"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistic - Invalid query",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"sensorId\": \"sensor-1\",\r\n            \"timestamp\": \"2024-12-12T20:55:16.042614\",\r\n            \"metrics\": [\r\n                {\r\n                    \"metricName\": \"Temp\",\r\n                    \"metricValue\": 21.0,\r\n                    \"unit\": \"Celcius\"\r\n                },\r\n                {\r\n                    \"metricName\": \"Humidity\",\r\n                    \"metricValue\": 12.0,\r\n                    \"unit\": \"g/kg\"\r\n                },\r\n                {\r\n                    \"metricName\": \"WindSpeed\",\r\n                    \"metricValue\": 32.0,\r\n                    \"unit\": \"km/h\"\r\n                }\r\n            ]\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/weather/metric/statistic?statistic=min&sensorId=sensor-1&startDate=2024-12-13T20:55:16.042614&endDate=2024-12-14T20:55:16.042614",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"weather",
+						"metric",
+						"statistic"
+					],
+					"query": [
+						{
+							"key": "statistic",
+							"value": "min"
+						},
+						{
+							"key": "sensorId",
+							"value": "sensor-1"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-12-13T20:55:16.042614"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-12-14T20:55:16.042614"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
